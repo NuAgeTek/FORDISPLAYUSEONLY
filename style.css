@@ -1,113 +1,183 @@
       .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 25%;
-    }
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 25%;
+      }
 
-    #gif {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 20%;
-    }
+      #gif {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20%;
+      }
 
-    h2 {
-      text-align: center;
-      color: blue;
-    }
+      h2 {
+        text-align: center;
+        color: blue;
+      }
 
-    #opener{
-      font-family: 'Courier Prime', monospace;
-      font-size: 25px;
-      font-weight: bolder;
-    }
-    .v1-container{
-      padding: 1%;
-    }
-    .detail-container{
-      padding: 1%;
-    }
-    .name-container{
-     padding: 1%;
-     
-    }
-    p {
-      text-align: center;
-    }
-    .head-text{
-      font-family: Helvetica;
-      overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: .15em solid transparent; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: auto; /* Gives that scrolling effect as the typing happens */
-      letter-spacing: .15em; /* Adjust as needed */
-      animation: typing 2.5s 
-      steps(50, end) forwards,
-      blink-caret .5s step-end 8;
-    }
+      .v1-container {
+        padding: 1%;
+      }
 
-    .text{
-      font-family: Helvetica;
-      overflow: hidden; /* Ensures the content is not revealed until the animation */
-      border-right: .15em solid transparent; /* The typwriter cursor */
-      white-space: nowrap; /* Keeps the content on a single line */
-      margin: auto; /* Gives that scrolling effect as the typing happens */
-      letter-spacing: .15em; /* Adjust as needed */
-      animation: typing 2.5s 
-      steps(50, end) forwards,
-      blink-caret .5s step-end 8;
-      text-align: center;
-}
+      .detail-container {
+        padding: 1%;
+      }
 
-/* The typing effect*/
-    @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+      .name-container {
+        padding: 1%;
+        font-size: 3.5rem;
+
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .head-text {
+        font-family: Helvetica;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em;
+        /* Adjust as needed */
+        animation: typing 2.5s steps(50, end) forwards,
+          blink-caret .5s step-end 8;
+      }
+
+      .text {
+        font-family: Helvetica;
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid transparent;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em;
+        /* Adjust as needed */
+        animation: typing 2.5s steps(50, end) forwards,
+          blink-caret .5s step-end 8;
+        text-align: center;
+      }
+
+      /* The typing effect*/
+      @keyframes typing {
+        from {
+          width: 0
+        }
+
+        to {
+          width: 100%
+        }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+
+        from,
+        to {
+          border-color: transparent
+        }
+
+        50% {
+          border-color: blue;
+        }
+      }
+
+      img {
+        width: 50%;
+        margin: auto;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      footer {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: white;
+        color: black;
+        font-family: 'Courier Prime', monospace;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: center;
+        padding: 20px 56px;
+      }
+
+      .carousel-item {
+        transition: transform 7s ease-in-out;
+      }
+
+      .carousel-fade .active.carousel-item-start,
+      .carousel-fade .active.carousel-item-end {
+        transition: opacity 0s 5s;
+      }
+
+      /* Mobile styles*/
+      @media only screen and (max-width: 767px) {
+        p {
+          font-size: .8rem;
+        }
+
+        .text {
+          font-family: Helvetica;
+          overflow: hidden;
+          /* Ensures the content is not revealed until the animation */
+          border-right: .15em solid transparent;
+          /* The typwriter cursor */
+          white-space: nowrap;
+          /* Keeps the content on a single line */
+          margin: auto;
+          /* Gives that scrolling effect as the typing happens */
+          letter-spacing: .15em;
+          /* Adjust as needed */
+          animation: typing 2.5s steps(50, end) forwards,
+            blink-caret .5s step-end 8;
+          text-align: center;
+          font-size: .8rem;
+        }
+        .head-text {
+          font-family: Helvetica;
+          overflow: hidden;
+          /* Ensures the content is not revealed until the animation */
+          border-right: .15em solid transparent;
+          /* The typwriter cursor */
+          white-space: nowrap;
+          /* Keeps the content on a single line */
+          margin: auto;
+          /* Gives that scrolling effect as the typing happens */
+          letter-spacing: .15em;
+          /* Adjust as needed */
+          animation: typing 2.5s steps(50, end) forwards,
+            blink-caret .5s step-end 8;
+            font-size: .8rem;
+        }
+        #gif {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        .carousel-container{
+          justify-self: auto;
+          size: 10rem;
+
+        }
+        .d-block{
+          width: 110%;
+        }
   
-  /* The typewriter cursor effect */
-    @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: blue; }
-  }
-  
-  img
-{
-   width: 50%;
-   margin: auto;
-}
-
-a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    background-color: white;
-    color: black;
-    font-family: 'Courier Prime', monospace;
-}
-  .footer-container{
-    display: flex;
-    justify-content: center;
-    padding: 20px 56px; 
-  }
-  .carousel-item {
-    transition: transform 7s ease-in-out;
-  }
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
-    transition: opacity 0s 5s;
-  }
-/* Mobile styles*/
-  @media only screen and (max-width: 767px)
-  {
-#carousel {
-  display: inline-block;
-  
-}
-  }
+      }
